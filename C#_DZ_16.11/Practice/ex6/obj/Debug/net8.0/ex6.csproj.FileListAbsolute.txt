@@ -1,0 +1,14 @@
+C:\Users\student\source\repos\ex6\bin\Debug\net8.0\ex6.exe
+C:\Users\student\source\repos\ex6\bin\Debug\net8.0\ex6.deps.json
+C:\Users\student\source\repos\ex6\bin\Debug\net8.0\ex6.runtimeconfig.json
+C:\Users\student\source\repos\ex6\bin\Debug\net8.0\ex6.dll
+C:\Users\student\source\repos\ex6\bin\Debug\net8.0\ex6.pdb
+C:\Users\student\source\repos\ex6\obj\Debug\net8.0\ex6.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\student\source\repos\ex6\obj\Debug\net8.0\ex6.AssemblyInfoInputs.cache
+C:\Users\student\source\repos\ex6\obj\Debug\net8.0\ex6.AssemblyInfo.cs
+C:\Users\student\source\repos\ex6\obj\Debug\net8.0\ex6.csproj.CoreCompileInputs.cache
+C:\Users\student\source\repos\ex6\obj\Debug\net8.0\ex6.dll
+C:\Users\student\source\repos\ex6\obj\Debug\net8.0\refint\ex6.dll
+C:\Users\student\source\repos\ex6\obj\Debug\net8.0\ex6.pdb
+C:\Users\student\source\repos\ex6\obj\Debug\net8.0\ex6.genruntimeconfig.cache
+C:\Users\student\source\repos\ex6\obj\Debug\net8.0\ref\ex6.dll
