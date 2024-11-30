@@ -1,0 +1,14 @@
+C:\Users\student\source\repos\ex9\bin\Debug\net8.0\ex9.exe
+C:\Users\student\source\repos\ex9\bin\Debug\net8.0\ex9.deps.json
+C:\Users\student\source\repos\ex9\bin\Debug\net8.0\ex9.runtimeconfig.json
+C:\Users\student\source\repos\ex9\bin\Debug\net8.0\ex9.dll
+C:\Users\student\source\repos\ex9\bin\Debug\net8.0\ex9.pdb
+C:\Users\student\source\repos\ex9\obj\Debug\net8.0\ex9.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\student\source\repos\ex9\obj\Debug\net8.0\ex9.AssemblyInfoInputs.cache
+C:\Users\student\source\repos\ex9\obj\Debug\net8.0\ex9.AssemblyInfo.cs
+C:\Users\student\source\repos\ex9\obj\Debug\net8.0\ex9.csproj.CoreCompileInputs.cache
+C:\Users\student\source\repos\ex9\obj\Debug\net8.0\ex9.dll
+C:\Users\student\source\repos\ex9\obj\Debug\net8.0\refint\ex9.dll
+C:\Users\student\source\repos\ex9\obj\Debug\net8.0\ex9.pdb
+C:\Users\student\source\repos\ex9\obj\Debug\net8.0\ex9.genruntimeconfig.cache
+C:\Users\student\source\repos\ex9\obj\Debug\net8.0\ref\ex9.dll
