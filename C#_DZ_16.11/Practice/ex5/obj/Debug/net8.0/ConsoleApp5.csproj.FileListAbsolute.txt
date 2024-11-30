@@ -1,0 +1,14 @@
+C:\Users\student\source\repos\ConsoleApp5\bin\Debug\net8.0\ConsoleApp5.exe
+C:\Users\student\source\repos\ConsoleApp5\bin\Debug\net8.0\ConsoleApp5.deps.json
+C:\Users\student\source\repos\ConsoleApp5\bin\Debug\net8.0\ConsoleApp5.runtimeconfig.json
+C:\Users\student\source\repos\ConsoleApp5\bin\Debug\net8.0\ConsoleApp5.dll
+C:\Users\student\source\repos\ConsoleApp5\bin\Debug\net8.0\ConsoleApp5.pdb
+C:\Users\student\source\repos\ConsoleApp5\obj\Debug\net8.0\ConsoleApp5.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\student\source\repos\ConsoleApp5\obj\Debug\net8.0\ConsoleApp5.AssemblyInfoInputs.cache
+C:\Users\student\source\repos\ConsoleApp5\obj\Debug\net8.0\ConsoleApp5.AssemblyInfo.cs
+C:\Users\student\source\repos\ConsoleApp5\obj\Debug\net8.0\ConsoleApp5.csproj.CoreCompileInputs.cache
+C:\Users\student\source\repos\ConsoleApp5\obj\Debug\net8.0\ConsoleApp5.dll
+C:\Users\student\source\repos\ConsoleApp5\obj\Debug\net8.0\refint\ConsoleApp5.dll
+C:\Users\student\source\repos\ConsoleApp5\obj\Debug\net8.0\ConsoleApp5.pdb
+C:\Users\student\source\repos\ConsoleApp5\obj\Debug\net8.0\ConsoleApp5.genruntimeconfig.cache
+C:\Users\student\source\repos\ConsoleApp5\obj\Debug\net8.0\ref\ConsoleApp5.dll
