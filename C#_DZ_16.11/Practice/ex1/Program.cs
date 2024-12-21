@@ -1,72 +1,72 @@
-﻿using System.Text;
-
-namespace ConsoleApp1
+﻿namespace ConsoleApp1
 {
     internal class Program
     {
         static void Main(string[] args)
         {
+            var random = new Random(DateTime.Now.Millisecond);
+            Console.WriteLine("Enter the lower bound of the random number: ");
+            var lowerMaxRandomBound = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Enter the upper bound of the random number: ");
+            var upperMaxRandomBound = Convert.ToInt32(Console.ReadLine());
 
-            Console.InputEncoding = Encoding.Unicode;
-            Console.OutputEncoding = Encoding.Unicode;
-            
-            double[] A = new double[5];
-            double[,] B = new double[3, 4];
-
-            Console.WriteLine("Введіть 5 елементів для масиву A:");
-            for (int i = 0; i < A.Length; i++)
+            if (lowerMaxRandomBound > upperMaxRandomBound)
             {
-                A[i] = Convert.ToDouble(Console.ReadLine());
+                (lowerMaxRandomBound, upperMaxRandomBound) = (upperMaxRandomBound, lowerMaxRandomBound);
             }
 
-            Random rand = new Random();
-            Console.WriteLine("\nМасив B (3 рядки, 4 стовпці):");
-            for (int i = 0; i < 3; i++)
+            Console.WriteLine("Enter the size of the array: ");
+            int size = Convert.ToInt32(Console.ReadLine());
+            int[] arr = new int[size];
+
+            for (int i = 0; i < size; i++)
             {
-                for (int j = 0; j < 4; j++)
-                {
-                    B[i, j] = rand.NextDouble() * 100;
-                    Console.Write($"{B[i, j]:F2} \t");
-                }
-                Console.WriteLine();
+                arr[i] = random.Next(lowerMaxRandomBound, upperMaxRandomBound + 1);
             }
 
-            Console.WriteLine("\nМасив A:");
-            foreach (var item in A)
+            Console.WriteLine("The generated array is: ");
+            foreach (var item in arr)
             {
-                Console.Write(item + " ");
+                Console.Write($"{item} ");
             }
             Console.WriteLine();
 
-            double max = A[0], min = A[0], sum = 0, product = 1, evenSum = 0;
-            double oddColumnsSum = 0;
-
-            for (int i = 0; i < A.Length; i++)
+            int evenCount = 0;
+            int oddCount = 0;
+            foreach (int number in arr)
             {
-                sum += A[i];
-                product *= A[i];
-                if (A[i] > max) max = A[i];
-                if (A[i] < min) min = A[i];
-                if (A[i] % 2 == 0) evenSum += A[i];
-            }
-
-            for (int j = 0; j < 4; j++)
-            {
-                if (j % 2 != 0) 
+                if (number % 2 == 0)
                 {
-                    for (int i = 0; i < 3; i++)
+                    evenCount++;
+                }
+                else
+                {
+                    oddCount++;
+                }
+            }
+            int uniqueCount = 0;
+            for (int i = 0; i < arr.Length; i++)
+            {
+                bool isUnique = true;
+
+                for (int j = 0; j < arr.Length; j++)
+                {
+                    if (i != j && arr[i] == arr[j])
                     {
-                        oddColumnsSum += B[i, j];
+                        isUnique = false;
+                        break;
                     }
+                }
+
+                if (isUnique)
+                {
+                    uniqueCount++;
                 }
             }
 
-            Console.WriteLine($"\nМаксимальний елемент: {max}");
-            Console.WriteLine($"Мінімальний елемент: {min}");
-            Console.WriteLine($"Загальна сума елементів масиву A: {sum}");
-            Console.WriteLine($"Загальний добуток елементів масиву A: {product}");
-            Console.WriteLine($"Сума парних елементів масиву A: {evenSum}");
-            Console.WriteLine($"Сума непарних стовпців масиву B: {oddColumnsSum}");
+            Console.WriteLine($"Par: {evenCount}");
+            Console.WriteLine($"Ne pa: {oddCount}");
+            Console.WriteLine($"Uniq: {uniqueCount}");
         }
     }
-}
+ }
