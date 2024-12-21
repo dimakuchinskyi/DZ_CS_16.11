@@ -1,37 +1,72 @@
-﻿static void Main()
+﻿using System.Text;
+
+namespace ConsoleApp1
 {
-    Console.OutputEncoding = System.Text.Encoding.GetEncoding(1251);
-    int[] arr = { 1, 2, 2, 3, 4, 4, 5, 6, 7 };
-    var result = CountEvenOddUnique(arr);
-    Console.WriteLine($"Кількість парних чисел: {result.Item1}");
-    Console.WriteLine($"Кількість непарних чисел: {result.Item2}");
-    Console.WriteLine($"Кількість унікальних чисел: {result.Item3}");
-}
-static Tuple<int, int, int> CountEvenOddUnique(int[] arr)
-{
-    int evenCount = 0;
-    int oddCount = 0;
-    int uniqueCount = 0;
-    bool[] isUnique = new bool[arr.Length];
-    for (int i = 0; i < arr.Length; i++)
+    internal class Program
     {
-        if (arr[i] % 2 == 0)
-            evenCount++;
-        else
-            oddCount++;
-        bool isDuplicate = false;
-        for (int j = 0; j < i; j++)
+        static void Main(string[] args)
         {
-            if (arr[i] == arr[j])
+
+            Console.InputEncoding = Encoding.Unicode;
+            Console.OutputEncoding = Encoding.Unicode;
+            
+            double[] A = new double[5];
+            double[,] B = new double[3, 4];
+
+            Console.WriteLine("Введіть 5 елементів для масиву A:");
+            for (int i = 0; i < A.Length; i++)
             {
-                isDuplicate = true;
-                break;
+                A[i] = Convert.ToDouble(Console.ReadLine());
             }
-        }
-        if (!isDuplicate)
-        {
-            uniqueCount++;
+
+            Random rand = new Random();
+            Console.WriteLine("\nМасив B (3 рядки, 4 стовпці):");
+            for (int i = 0; i < 3; i++)
+            {
+                for (int j = 0; j < 4; j++)
+                {
+                    B[i, j] = rand.NextDouble() * 100;
+                    Console.Write($"{B[i, j]:F2} \t");
+                }
+                Console.WriteLine();
+            }
+
+            Console.WriteLine("\nМасив A:");
+            foreach (var item in A)
+            {
+                Console.Write(item + " ");
+            }
+            Console.WriteLine();
+
+            double max = A[0], min = A[0], sum = 0, product = 1, evenSum = 0;
+            double oddColumnsSum = 0;
+
+            for (int i = 0; i < A.Length; i++)
+            {
+                sum += A[i];
+                product *= A[i];
+                if (A[i] > max) max = A[i];
+                if (A[i] < min) min = A[i];
+                if (A[i] % 2 == 0) evenSum += A[i];
+            }
+
+            for (int j = 0; j < 4; j++)
+            {
+                if (j % 2 != 0) 
+                {
+                    for (int i = 0; i < 3; i++)
+                    {
+                        oddColumnsSum += B[i, j];
+                    }
+                }
+            }
+
+            Console.WriteLine($"\nМаксимальний елемент: {max}");
+            Console.WriteLine($"Мінімальний елемент: {min}");
+            Console.WriteLine($"Загальна сума елементів масиву A: {sum}");
+            Console.WriteLine($"Загальний добуток елементів масиву A: {product}");
+            Console.WriteLine($"Сума парних елементів масиву A: {evenSum}");
+            Console.WriteLine($"Сума непарних стовпців масиву B: {oddColumnsSum}");
         }
     }
-    return Tuple.Create(evenCount, oddCount, uniqueCount);
 }
